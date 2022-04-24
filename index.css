@@ -1,0 +1,144 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* CSS VARIABLES */
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--dark-cyan);
+  overflow: hidden;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span,
+.location {
+  color: var(--gray);
+}
+
+/* CIRLCE */
+.circle {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+}
+
+.top {
+  transform: translate(-50%, -40%);
+}
+
+.bottom {
+  transform: translate(45%, 55%);
+}
+
+/* CARD */
+.card {
+  width: 90%;
+  max-width: 350px;
+  border-radius: 15px;
+  background: white;
+  z-index: 10;
+}
+
+
+/* TOP OF CARD PATTERN */
+.pattern {
+  background: url("./images/bg-pattern-card.svg");
+  background-size: cover;
+  /* top, right, bottom, left */
+  border-radius: 15px 15px 0 0; 
+  height: 150px;
+}
+
+/* NAME SECTION */
+.name {
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.name .wrapper {
+  position: relative;
+  top: -50px;
+  text-align: center;
+
+}
+
+.name img {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 20px auto 10px;
+  font-size: 18px;
+}
+
+h1 span {
+  font-weight: 400;
+  margin-left: 10px;
+  color: var(--grayish-blue)
+}
+
+.location {
+  font-size: .9rem;
+}
+
+/* NUMBERS SECTION */
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.bold {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bold span {
+  font-size: .6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-top: .4rem;
+}
+
+/* ATTRIBUTION */
+.attribution { 
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
