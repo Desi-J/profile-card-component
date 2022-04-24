@@ -19,7 +19,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
-![]("./images/screenshot.png")
+![](./images/screenshot.png)
 
 ### Links
 
@@ -29,7 +29,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ## My process
   For the middle section (name, age, & location) I used a wrapper div to wrap the content. I gave it a positon of relative so I can push it up moving the image between the wavy card background and the middle section. I tried only giving the image a positon of relative and pushing that up by itself but I had trouble with the margins of the rest of the content not lining up how I wanted. Below is a screenshot, the red border is the wrapper div while the blue border is the middle section. You can see how the wrapper div (red) is being pushed up out of its container (blue).
 
-![]("./images/borders.png")
+![](./images/borders.png)
 
 ### Built with
 
